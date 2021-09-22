@@ -1,5 +1,5 @@
 const loadCountries = () => {
-    fetch('https://restcountries.eu/rest/v2/all')
+    fetch('https://restcountries.com/v2/all')
         .then(res => res.json())
         .then(data => displayCountries(data));
 
@@ -19,10 +19,8 @@ const getCountyHTML = country => {
          
              <h2>${country.name}</h2>
              <h4>Capital: ${country.capital}</h4>
-             <img src = "${country.flag}">
+             <img src="${country.flag}">
 
-
-        
         </div>
     
     `
